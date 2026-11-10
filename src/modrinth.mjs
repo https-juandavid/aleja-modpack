@@ -15,10 +15,10 @@ function envFor(project, side) {
   return { client: project.client_side ?? 'required', server: project.server_side ?? 'required' };
 }
 
-// A required dependency goes exactly where the mod needing it goes, unless the lib itself can't run there.
-function restrict(env, parentEnv) {
-  const side = (dep, parent) => (parent === 'unsupported' || dep === 'unsupported' ? 'unsupported' : parent);
-  return { client: side(env.client, parentEnv.client), server: side(env.server, parentEnv.server) };
+// A required dependency goes exactly where the mod needing it goes. Its own Modrinth side metadata is
+// ignored: Fabric refuses to start if a mod's required dependency is missing (e.g. Terralith → lithostitched).
+function restrict(_env, parentEnv) {
+  return { client: parentEnv.client, server: parentEnv.server };
 }
 
 function widen(a, b) {

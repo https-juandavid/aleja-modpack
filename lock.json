@@ -661,7 +661,7 @@
       "sha512": "c4b81e736a04ec403fba46f9953d5d6f64705e49168e47dfa584fac76fca9995fdf58062533e33b5c28c9bcdd49808b40897ea22116a63700937a347e6cee765",
       "size": 1064954,
       "env": {
-        "client": "unsupported",
+        "client": "optional",
         "server": "required"
       },
       "dependencyOf": "terralith"

@@ -105,6 +105,17 @@ test('dependency inherits required from the mod that needs it', async () => {
   assert.deepEqual(lock.find((e) => e.slug === 'yacl').env, { client: 'required', server: 'unsupported' });
 });
 
+test('required dependency goes wherever its mod goes, even if Modrinth marks it unsupported there', async () => {
+  // Real case: Terralith (client optional) requires lithostitched (client_side "unsupported" on Modrinth),
+  // and Fabric refuses to start the client without it.
+  const fetch = fakeFetch({
+    terralith: { id: 'T', client_side: 'optional', server_side: 'required', versions: [ver('t1', '1', 'release', '2026-01-01', [{ project_id: 'L', dependency_type: 'required' }])] },
+    lithostitched: { id: 'L', client_side: 'unsupported', server_side: 'required', versions: [ver('l1', '1', 'release', '2026-01-01')] },
+  });
+  const lock = await resolveMods(base([{ slug: 'terralith' }]), { fetch });
+  assert.deepEqual(lock.find((e) => e.slug === 'lithostitched').env, { client: 'optional', server: 'required' });
+});
+
 test('dependencies of other loaders are ignored', async () => {
   const fetch = fakeFetch({
     a: { id: 'A', client_side: 'required', server_side: 'required', versions: [ver('a1', '1', 'release', '2026-01-01', [{ project_id: 'KF', dependency_type: 'required' }])] },
