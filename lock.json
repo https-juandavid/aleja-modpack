@@ -524,7 +524,7 @@
       "size": 2400273,
       "env": {
         "client": "required",
-        "server": "unsupported"
+        "server": "required"
       }
     },
     {
@@ -900,7 +900,7 @@
       "size": 390532,
       "env": {
         "client": "required",
-        "server": "unsupported"
+        "server": "required"
       },
       "dependencyOf": "jei"
     },

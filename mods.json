@@ -1,6 +1,6 @@
 {
   "name": "Aleja Aventura",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "minecraft": "26.1.2",
   "publicRepo": "https-juandavid/aleja-modpack",
   "mods": [
@@ -41,7 +41,7 @@
     { "slug": "lambdynamiclights", "side": "client" },
     { "slug": "controlling", "side": "client" },
     { "slug": "jade", "side": "client" },
-    { "slug": "jei", "side": "client" },
+    { "slug": "jei", "side": "both" },
     { "slug": "modmenu", "side": "client" },
     { "slug": "sodium", "side": "client" },
     { "slug": "iris", "side": "client" },
