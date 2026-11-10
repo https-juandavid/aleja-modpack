@@ -18,21 +18,19 @@ Pasos:
 
 2. Revisa si tengo instalada una versión de Fabric para Minecraft 26.1.2 (busca en <carpeta de juego>\versions algo como "fabric-loader-...-26.1.2"). Si no está, guíame para instalarla desde el propio SKLauncher (en la lista de versiones, elegir Fabric y Minecraft 26.1.2) y espera a que te diga que ya lo hice.
 
-3. Si ya existe la carpeta mods, renómbrala a mods-respaldo-AAAAMMDD-HHMM (con la fecha y hora actuales) y crea una carpeta mods vacía. No borres nada.
-
-4. Consigue el pack:
+3. Consigue el pack:
    - Si tengo git: clona https://github.com/{{PUBLIC_REPO}}.git en %USERPROFILE%\aleja-modpack, o si esa carpeta ya existe, haz "git pull" dentro de ella.
    - Si no tengo git: descarga {{MRPACK_URL}}.
    Descomprime dist/aleja.mrpack (es un zip) en una carpeta temporal NUEVA y lee el archivo modrinth.index.json.
 
-5. Para cada entrada de "files" cuyo env.client NO sea "unsupported":
+4. Descarga los mods a esa carpeta temporal (todavía no toques mi carpeta mods). Para cada entrada de "files" cuyo env.client NO sea "unsupported":
    - Descárgala solo si la URL empieza por https://cdn.modrinth.com/ (si alguna no, detente y avísame).
-   - Calcula su SHA-512 y compáralo con hashes.sha512. Si alguno no coincide, detente sin copiar nada y avísame.
+   - Calcula su SHA-512 y compáralo con hashes.sha512. Si alguno no coincide, detente y avísame: mi carpeta mods debe quedar como estaba.
    Las entradas con env.client "unsupported" son solo del servidor: no las instales.
 
-6. Cuando todas estén verificadas, copia los .jar a la carpeta mods y crea el archivo mods\.aleja-version con el texto {{VERSION}}.
+5. Solo cuando TODOS los archivos estén descargados y verificados: si ya existe la carpeta mods, renómbrala a mods-respaldo-AAAAMMDD-HHMM (con la fecha y hora actuales; no borres nada), crea una carpeta mods nueva, copia ahí los .jar verificados y crea el archivo mods\.aleja-version con el texto {{VERSION}}.
 
-7. Dime qué instalaste (lista de archivos), la versión del pack que quedó ({{VERSION}}) y si hubo algún problema.
+6. Dime qué instalaste (lista de archivos), la versión del pack que quedó ({{VERSION}}) y si hubo algún problema.
 
 Reglas: no ejecutes ningún archivo descargado (.jar, .exe, scripts); solo descárgalos, verifícalos y cópialos. No toques nada fuera de la carpeta de juego, la carpeta temporal y %USERPROFILE%\aleja-modpack.
 ```
@@ -43,5 +41,7 @@ Reglas: no ejecutes ningún archivo descargado (.jar, .exe, scripts); solo desc�
 
 1. En SKLauncher elige el perfil o versión **Fabric 26.1.2**.
 2. Dale **6 GB de RAM** en los ajustes de SKLauncher.
-3. Entra al servidor con la dirección que te pase tu pareja. La primera vez escribe `/register <tu-clave> <tu-clave>`, y las siguientes `/login <tu-clave>`.
+3. Entra al servidor con la dirección que te pase tu pareja. También te pasa la **contraseña global** (no está en este repo porque es público).
+   - La primera vez: `/register <contraseña-global> <tu-clave> <tu-clave>`
+   - Las siguientes: `/login <tu-clave>`
 4. Zoom: mantén presionada la tecla **C**.
