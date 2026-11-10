@@ -8,9 +8,9 @@ Copia todo el bloque de abajo y pégaselo a Claude (Claude Code o la app de escr
 Hola Claude. Quiero que instales en mi PC (Windows) los mods del modpack "Aleja Aventura", versión 1.0.0, para Minecraft 26.1.2 con Fabric. Uso SKLauncher. Trabaja paso a paso y pregúntame antes de escribir o borrar cualquier cosa.
 
 Datos del modpack:
-- Repositorio público: https://github.com/PENDIENTE: publicar el repo del modpack en GitHub
+- Repositorio público: https://github.com/https-juandavid/aleja-modpack
 - Archivo del pack dentro del repo: dist/aleja.mrpack
-- Descarga directa (si no hay git): PENDIENTE: publicar el repo del modpack en GitHub
+- Descarga directa (si no hay git): https://raw.githubusercontent.com/https-juandavid/aleja-modpack/main/dist/aleja.mrpack
 
 Pasos:
 
@@ -21,8 +21,8 @@ Pasos:
 3. Si ya existe la carpeta mods, renómbrala a mods-respaldo-AAAAMMDD-HHMM (con la fecha y hora actuales) y crea una carpeta mods vacía. No borres nada.
 
 4. Consigue el pack:
-   - Si tengo git: clona https://github.com/PENDIENTE: publicar el repo del modpack en GitHub.git en %USERPROFILE%\aleja-modpack, o si esa carpeta ya existe, haz "git pull" dentro de ella.
-   - Si no tengo git: descarga PENDIENTE: publicar el repo del modpack en GitHub.
+   - Si tengo git: clona https://github.com/https-juandavid/aleja-modpack.git en %USERPROFILE%\aleja-modpack, o si esa carpeta ya existe, haz "git pull" dentro de ella.
+   - Si no tengo git: descarga https://raw.githubusercontent.com/https-juandavid/aleja-modpack/main/dist/aleja.mrpack.
    Descomprime dist/aleja.mrpack (es un zip) en una carpeta temporal NUEVA y lee el archivo modrinth.index.json.
 
 5. Para cada entrada de "files" cuyo env.client NO sea "unsupported":

@@ -2,7 +2,7 @@
   "name": "Aleja Aventura",
   "version": "1.0.0",
   "minecraft": "26.1.2",
-  "publicRepo": null,
+  "publicRepo": "https-juandavid/aleja-modpack",
   "mods": [
     { "slug": "fabric-api", "side": "both" },
     { "slug": "lithium", "side": "both" },
@@ -20,6 +20,7 @@
     { "slug": "towns-and-towers" },
     { "slug": "terralith" },
     { "slug": "nullscape" },
+    { "slug": "betternether" },
     { "slug": "friends-and-foes" },
     { "slug": "the-graveyard-fabric" },
     { "slug": "lootr" },

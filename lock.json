@@ -228,6 +228,21 @@
       }
     },
     {
+      "slug": "betternether",
+      "projectId": "MpzVLzy5",
+      "versionId": "7CEc5wqL",
+      "versionNumber": "26.101.5",
+      "filename": "better-nether-26.101.5.jar",
+      "url": "https://cdn.modrinth.com/data/MpzVLzy5/versions/7CEc5wqL/better-nether-26.101.5.jar",
+      "sha1": "b730f2bf25d45b7d1e544766d05f6d539b517e73",
+      "sha512": "56bba71cef6450967efd96c5809ac61c5332fabf5aae180020538f5f599ac91a177ac10517c519e46b7acd35953384c105f2636e7d5454264369173698b55000",
+      "size": 24418052,
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
       "slug": "friends-and-foes",
       "projectId": "POQ2i9zu",
       "versionId": "MReCzJrI",
@@ -652,6 +667,38 @@
       "dependencyOf": "terralith"
     },
     {
+      "slug": "worldweaver",
+      "projectId": "RiN8rDVs",
+      "versionId": "WKBeK6NA",
+      "versionNumber": "26.101.5",
+      "filename": "worldweaver-26.101.5.jar",
+      "url": "https://cdn.modrinth.com/data/RiN8rDVs/versions/WKBeK6NA/worldweaver-26.101.5.jar",
+      "sha1": "73f8744d31c3da02aac261001b7c42a29c160703",
+      "sha512": "f8e7ce61ac5e96ee30a3455bab6ea3a88467356c5642fbf95c9609dffbcecd9e406dad0fe51e4f83975bd267049f9bf3bb0192de8c1e1c4015dbf0e118721db4",
+      "size": 2983387,
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "dependencyOf": "betternether"
+    },
+    {
+      "slug": "bclib",
+      "projectId": "BgNRHReB",
+      "versionId": "L2Um1lwa",
+      "versionNumber": "26.101.5",
+      "filename": "bclib-26.101.5.jar",
+      "url": "https://cdn.modrinth.com/data/BgNRHReB/versions/L2Um1lwa/bclib-26.101.5.jar",
+      "sha1": "1183ed6403a699736013c9bd08872952aa2dd91d",
+      "sha512": "10398d0b1032a80e32b55cf89e0912f7fb371d1a54f85b01696ea9ae503554ec96ea96a46108bf4e9fce93d4f903d907c5670b16b266619d4d475432d614e557",
+      "size": 1330855,
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "dependencyOf": "betternether"
+    },
+    {
       "slug": "resourceful-lib",
       "projectId": "G1hIVOrD",
       "versionId": "sOEhLVuw",
@@ -668,22 +715,6 @@
       "dependencyOf": "friends-and-foes"
     },
     {
-      "slug": "villagerstradingplus",
-      "projectId": "DhOXUfnP",
-      "versionId": "BPIZleTv",
-      "versionNumber": "1.1.0+mc26.1.2-fabric",
-      "filename": "villagertradingplus-fabric-mc26.1.2-1.1.0.jar",
-      "url": "https://cdn.modrinth.com/data/DhOXUfnP/versions/BPIZleTv/villagertradingplus-fabric-mc26.1.2-1.1.0.jar",
-      "sha1": "1fddb1ea1dcab2e3fa2ad46f8182773accaa1045",
-      "sha512": "cff8bb032f9e693ca4e8923cec8cbc5a0cc91f39c5b4f78da761f2e7acb85527e8465de052c239a30d7eed8b4bdf533f5fc756c2578084e77a79ece8bda00a69",
-      "size": 260941,
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "dependencyOf": "the-graveyard-fabric"
-    },
-    {
       "slug": "geckolib",
       "projectId": "8BmcQJ2H",
       "versionId": "XZTmZlwb",
@@ -693,6 +724,22 @@
       "sha1": "f2ece9fcb2089c238f64c52e989790fe4e067512",
       "sha512": "bf7a3802eb22d8f3798bd3b33d51cb5e6aceee634944abcc2651726929a220c85cc06047a4a9a7386e98138ac8dbe585768cf31c9d49de6b8368e71b2201dfb2",
       "size": 696572,
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "dependencyOf": "the-graveyard-fabric"
+    },
+    {
+      "slug": "villagerstradingplus",
+      "projectId": "DhOXUfnP",
+      "versionId": "BPIZleTv",
+      "versionNumber": "1.1.0+mc26.1.2-fabric",
+      "filename": "villagertradingplus-fabric-mc26.1.2-1.1.0.jar",
+      "url": "https://cdn.modrinth.com/data/DhOXUfnP/versions/BPIZleTv/villagertradingplus-fabric-mc26.1.2-1.1.0.jar",
+      "sha1": "1fddb1ea1dcab2e3fa2ad46f8182773accaa1045",
+      "sha512": "cff8bb032f9e693ca4e8923cec8cbc5a0cc91f39c5b4f78da761f2e7acb85527e8465de052c239a30d7eed8b4bdf533f5fc756c2578084e77a79ece8bda00a69",
+      "size": 260941,
       "env": {
         "client": "required",
         "server": "required"

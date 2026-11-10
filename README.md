@@ -26,6 +26,7 @@ Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric 0.20.
 | towns-and-towers | 1.13.11 | ambos |
 | terralith | 2.6.2 | ambos |
 | nullscape | 1.2.20 | ambos |
+| betternether | 26.101.5 | ambos |
 | friends-and-foes | fabric-5.0.4+mc26.1.2 | ambos |
 | the-graveyard-fabric | 4.0.0+mc26.1.2-fabric | ambos |
 | lootr | 1.23.38.123 | ambos |
