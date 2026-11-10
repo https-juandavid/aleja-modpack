@@ -32,3 +32,11 @@ test('renderModList lists top-level mods with side labels, skipping dependencies
   assert.match(md, /\| sodium \| 3 \| cliente \|/);
   assert.doesNotMatch(md, /geckolib/);
 });
+
+test('templates contain no stray control characters (broken Windows backslashes)', async () => {
+  const { readFile } = await import('node:fs/promises');
+  for (const f of ['templates/install-prompt.md', 'templates/README.md']) {
+    const s = await readFile(new URL(`../${f}`, import.meta.url), 'utf8');
+    assert.deepEqual([...s].filter((c) => c < ' ' && c !== '\n' && c !== '\t' && c !== '\r'), [], f);
+  }
+});

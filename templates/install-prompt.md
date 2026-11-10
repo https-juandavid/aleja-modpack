@@ -14,9 +14,12 @@ Datos del modpack:
 
 Pasos:
 
-1. Encuentra la carpeta de juego que usa MI SKLauncher. No la supongas: revisa %APPDATA%\.minecraft, la configuración de SKLauncher que haya dentro de esa carpeta y el campo "gameDir" de cada perfil en launcher_profiles.json (y cualquier otro archivo de perfiles de SKLauncher que encuentres). Muéstrame qué carpeta(s) encontraste y qué perfil la usa, y espera a que yo confirme cuál es antes de seguir. La carpeta de mods será <esa carpeta>\mods.
+1. Encuentra la carpeta de la instancia que usa MI SKLauncher. No la supongas, revisa:
+   - SKLauncher 4 (beta): cada instancia vive en %APPDATA%\.sklauncher\instances\<nombre-de-instancia> (la lista está en %APPDATA%\.sklauncher\instances.json).
+   - SKLauncher 3: %APPDATA%\.minecraft, y el campo "gameDir" de cada perfil en launcher_profiles.json.
+   Muéstrame qué instancias/carpetas encontraste y espera a que yo confirme cuál es la del servidor Aleja antes de seguir. La carpeta de mods será <esa carpeta>\mods.
 
-2. Revisa si tengo instalada una versión de Fabric para Minecraft 26.1.2 (busca en <carpeta de juego>\versions algo como "fabric-loader-...-26.1.2"). Si no está, guíame para instalarla desde el propio SKLauncher (en la lista de versiones, elegir Fabric y Minecraft 26.1.2) y espera a que te diga que ya lo hice.
+2. Comprueba que esa instancia sea de Minecraft 26.1.2 con Fabric Loader 0.20.1 o más nuevo (mira instances.json en SKLauncher 4, o en <carpeta de juego>\versions algo como "fabric-loader-0.20.1-26.1.2" en SKLauncher 3). Si no existe, guíame para crearla en SKLauncher (nueva instancia → Fabric → Minecraft 26.1.2) y espera a que te diga que ya lo hice.
 
 3. Consigue el pack:
    - Si tengo git: clona https://github.com/{{PUBLIC_REPO}}.git en %USERPROFILE%\aleja-modpack, o si esa carpeta ya existe, haz "git pull" dentro de ella.
@@ -32,14 +35,14 @@ Pasos:
 
 6. Dime qué instalaste (lista de archivos), la versión del pack que quedó ({{VERSION}}) y si hubo algún problema.
 
-Reglas: no ejecutes ningún archivo descargado (.jar, .exe, scripts); solo descárgalos, verifícalos y cópialos. No toques nada fuera de la carpeta de juego, la carpeta temporal y %USERPROFILE%\aleja-modpack.
+Reglas: no ejecutes ningún archivo descargado (.jar, .exe, scripts); solo descárgalos, verifícalos y cópialos. No toques nada fuera de la carpeta de la instancia, la carpeta temporal y %USERPROFILE%\aleja-modpack.
 ```
 
 ---
 
 ## Después de instalar (para ti, no para Claude)
 
-1. En SKLauncher elige el perfil o versión **Fabric 26.1.2**.
+1. En SKLauncher abre la instancia **Fabric 26.1.2** (por ejemplo "Aleja Adventures").
 2. Dale **6 GB de RAM** en los ajustes de SKLauncher.
 3. Entra al servidor con la dirección que te pase tu pareja. También te pasa la **contraseña global** (no está en este repo porque es público).
    - La primera vez: `/register <contraseña-global> <tu-clave> <tu-clave>`
