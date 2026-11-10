@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
 import { resolveMods } from './modrinth.mjs';
 import { buildIndex, writeMrpack } from './mrpack.mjs';
+import { renderPrompt, renderModList } from './prompt.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const p = (f) => join(root, f);
@@ -31,6 +32,13 @@ async function main() {
   }
   const index = buildIndex(modsJson, lockFile.mods, lockFile.loader);
   await writeMrpack(index, p('dist/aleja.mrpack'));
+
+  const vars = { version: modsJson.version, publicRepo: modsJson.publicRepo ?? null };
+  await writeFile(p('INSTALAR-CON-CLAUDE.md'), renderPrompt(await readFile(p('templates/install-prompt.md'), 'utf8'), vars));
+  const readme = renderPrompt(await readFile(p('templates/README.md'), 'utf8'), vars)
+    .replaceAll('{{LOADER}}', lockFile.loader)
+    .replaceAll('{{MOD_LIST}}', renderModList(lockFile.mods));
+  await writeFile(p('README.md'), readme);
 
   console.table(lockFile.mods.map((m) => ({ slug: m.slug, version: m.versionNumber, cliente: m.env.client, servidor: m.env.server, dep: m.dependencyOf ?? '' })));
   console.log(`Pack ${modsJson.name} ${modsJson.version} · Minecraft ${modsJson.minecraft} · Fabric ${lockFile.loader} · ${lockFile.mods.length} archivos → dist/aleja.mrpack`);
