@@ -5,7 +5,7 @@ Copia todo el bloque de abajo y pégaselo a Claude (Claude Code o la app de escr
 ---
 
 ```text
-Hola Claude. Quiero que instales en mi PC (Windows) los mods del modpack "Aleja Aventura", versión 1.0.1, para Minecraft 26.1.2 con Fabric. Uso SKLauncher. Trabaja paso a paso y pregúntame antes de escribir o borrar cualquier cosa.
+Hola Claude. Quiero que instales en mi PC (Windows) los mods del modpack "Aleja Aventura", versión 1.1.0, para Minecraft 26.1.2 con Fabric. Uso SKLauncher. Trabaja paso a paso y pregúntame antes de escribir o borrar cualquier cosa.
 
 Datos del modpack:
 - Repositorio público: https://github.com/https-juandavid/aleja-modpack
@@ -31,9 +31,9 @@ Pasos:
    - Calcula su SHA-512 y compáralo con hashes.sha512. Si alguno no coincide, detente y avísame: mi carpeta mods debe quedar como estaba.
    Las entradas con env.client "unsupported" son solo del servidor: no las instales.
 
-5. Solo cuando TODOS los archivos estén descargados y verificados: si ya existe la carpeta mods, renómbrala a mods-respaldo-AAAAMMDD-HHMM (con la fecha y hora actuales; no borres nada), crea una carpeta mods nueva, copia ahí los .jar verificados y crea el archivo mods\.aleja-version con el texto 1.0.1.
+5. Solo cuando TODOS los archivos estén descargados y verificados: si ya existe la carpeta mods, renómbrala a mods-respaldo-AAAAMMDD-HHMM (con la fecha y hora actuales; no borres nada), crea una carpeta mods nueva, copia ahí los .jar verificados y crea el archivo mods\.aleja-version con el texto 1.1.0.
 
-6. Dime qué instalaste (lista de archivos), la versión del pack que quedó (1.0.1) y si hubo algún problema.
+6. Dime qué instalaste (lista de archivos), la versión del pack que quedó (1.1.0) y si hubo algún problema.
 
 Reglas: no ejecutes ningún archivo descargado (.jar, .exe, scripts); solo descárgalos, verifícalos y cópialos. No toques nada fuera de la carpeta de la instancia, la carpeta temporal y %USERPROFILE%\aleja-modpack.
 ```

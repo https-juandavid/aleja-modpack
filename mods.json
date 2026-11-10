@@ -1,6 +1,6 @@
 {
   "name": "Aleja Aventura",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "minecraft": "26.1.2",
   "publicRepo": "https-juandavid/aleja-modpack",
   "mods": [
@@ -38,6 +38,8 @@
     { "slug": "xaeros-minimap", "side": "client" },
     { "slug": "xaeros-world-map", "side": "client" },
     { "slug": "zoomify", "side": "client" },
+    { "slug": "lambdynamiclights", "side": "client" },
+    { "slug": "controlling", "side": "client" },
     { "slug": "jade", "side": "client" },
     { "slug": "jei", "side": "client" },
     { "slug": "modmenu", "side": "client" },

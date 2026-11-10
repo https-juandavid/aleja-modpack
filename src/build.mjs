@@ -35,6 +35,7 @@ async function main() {
 
   const vars = { version: modsJson.version, publicRepo: modsJson.publicRepo ?? null };
   await writeFile(p('INSTALAR-CON-CLAUDE.md'), renderPrompt(await readFile(p('templates/install-prompt.md'), 'utf8'), vars));
+  await writeFile(p('CREAR-ACTUALIZADOR-CON-CLAUDE.md'), renderPrompt(await readFile(p('templates/update-script-prompt.md'), 'utf8'), vars));
   const readme = renderPrompt(await readFile(p('templates/README.md'), 'utf8'), vars)
     .replaceAll('{{LOADER}}', lockFile.loader)
     .replaceAll('{{MOD_LIST}}', renderModList(lockFile.mods));

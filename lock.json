@@ -468,6 +468,36 @@
       }
     },
     {
+      "slug": "lambdynamiclights",
+      "projectId": "yBW8D80W",
+      "versionId": "USlEyPPR",
+      "versionNumber": "4.11.2+26.1.2",
+      "filename": "lambdynamiclights-4.11.2+26.1.2.jar",
+      "url": "https://cdn.modrinth.com/data/yBW8D80W/versions/USlEyPPR/lambdynamiclights-4.11.2%2B26.1.2.jar",
+      "sha1": "9892be2fa480937da749501b14b4fffccebb7ad0",
+      "sha512": "bd9f12a60b04f93420d23af9b3e17fb8c91c705273c0257debb044f9672f1e8bc2367b5941bdc22dc48d6cc4f34e52e483fd0721516077bc056a47dc3da573d4",
+      "size": 1340177,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "slug": "controlling",
+      "projectId": "xv94TkTM",
+      "versionId": "NyXJNDB4",
+      "versionNumber": "26.1.2.7",
+      "filename": "Controlling-fabric-26.1.2-26.1.2.7.jar",
+      "url": "https://cdn.modrinth.com/data/xv94TkTM/versions/NyXJNDB4/Controlling-fabric-26.1.2-26.1.2.7.jar",
+      "sha1": "db70d3bc041eb7f66f31accc3bcfedd0ddfa7be4",
+      "sha512": "56315394b38b6c15e4e6a520c14385bbb25c74d40f96b08b6cf7f8c04a501aa64ccc0a008a93030cf4a344fdda488354e656d451b31b2b621cd56ca9ca9825a8",
+      "size": 86342,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
       "slug": "jade",
       "projectId": "nvQzSEkH",
       "versionId": "fW2xykin",
@@ -841,6 +871,22 @@
         "server": "unsupported"
       },
       "dependencyOf": "zoomify"
+    },
+    {
+      "slug": "searchables",
+      "projectId": "fuuu3xnx",
+      "versionId": "g7OQkxmL",
+      "versionNumber": "1.0.2",
+      "filename": "Searchables-fabric-26.1.2-1.0.2.jar",
+      "url": "https://cdn.modrinth.com/data/fuuu3xnx/versions/g7OQkxmL/Searchables-fabric-26.1.2-1.0.2.jar",
+      "sha1": "d643ea38eda14a43ddc640ed906fcebde611c8e8",
+      "sha512": "be190f746f3e4a59b1e58a1bcc8804473179c91f7485718f3832e20c249b5e804e2de00d5cc0b9197ca74fc1e8fc64b0783bf808d5298b78a36bb595c2db58e6",
+      "size": 79083,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "dependencyOf": "controlling"
     },
     {
       "slug": "mezzconfig",

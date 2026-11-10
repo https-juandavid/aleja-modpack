@@ -4,6 +4,7 @@ Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric {{LOA
 
 - Archivo del pack: [`dist/aleja.mrpack`](dist/aleja.mrpack), en formato Modrinth.
 - **Para instalarlo en SKLauncher con Claude:** abre [INSTALAR-CON-CLAUDE.md](INSTALAR-CON-CLAUDE.md) y sigue las instrucciones.
+- **Para actualizar con doble clic:** abre [CREAR-ACTUALIZADOR-CON-CLAUDE.md](CREAR-ACTUALIZADOR-CON-CLAUDE.md). Claude te crea una sola vez un script que solo baja los mods nuevos o los que cambiaron.
 
 ## Mods
 
