@@ -348,6 +348,36 @@
       }
     },
     {
+      "slug": "only-hammers-and-excavators",
+      "projectId": "OwtcCsNI",
+      "versionId": "QYELQDYO",
+      "versionNumber": "26.1.2-0.3",
+      "filename": "OnlyHammersAndExcavators-26.1.2-0.3.jar",
+      "url": "https://cdn.modrinth.com/data/OwtcCsNI/versions/QYELQDYO/OnlyHammersAndExcavators-26.1.2-0.3.jar",
+      "sha1": "d69de08938786dba918a7dc19184d61f1478c06d",
+      "sha512": "953e08bb6af02661727dbcaf83b4d163ff836d1528ec53948264d9e4b0dc171b846d343a88470991ef69cef2eb27bf79768ff75dd4004ff56a3dba9a853bb6d7",
+      "size": 116729,
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "fallingtree",
+      "projectId": "Fb4jn8m6",
+      "versionId": "87iHk1lF",
+      "versionNumber": "26.1.2-26.1.2.5",
+      "filename": "FallingTree-26.1.2-25.jar",
+      "url": "https://cdn.modrinth.com/data/Fb4jn8m6/versions/87iHk1lF/FallingTree-26.1.2-25.jar",
+      "sha1": "6f5987a6bc806e6910b1da6d7a7f9b8bdfb4aa23",
+      "sha512": "f9f2910f75c97c7960364e248c73975447e4a91f081e78e6f17501b8efc5876c70d78875d72a3ae9405560c540a80169b61c42a6430b2ab4c9f867aa07fc9d9c",
+      "size": 493178,
+      "env": {
+        "client": "optional",
+        "server": "required"
+      }
+    },
+    {
       "slug": "universal-graves",
       "projectId": "yn9u3ypm",
       "versionId": "hI8eYRJ3",

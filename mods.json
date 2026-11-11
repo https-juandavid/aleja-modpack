@@ -1,6 +1,6 @@
 {
   "name": "Aleja Aventura",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "minecraft": "26.1.2",
   "publicRepo": "https-juandavid/aleja-modpack",
   "mods": [
@@ -28,6 +28,8 @@
     { "slug": "travelersbackpack" },
     { "slug": "waystones" },
     { "slug": "explorers-compass" },
+    { "slug": "only-hammers-and-excavators" },
+    { "slug": "fallingtree" },
 
     { "slug": "universal-graves", "side": "server" },
     { "slug": "easyauth", "side": "server", "allowUnstable": true },
