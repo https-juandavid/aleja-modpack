@@ -1,6 +1,6 @@
 # Aleja Aventura — modpack
 
-Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric 0.20.1**. Versión del pack: **1.2.0**.
+Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric 0.20.1**. Versión del pack: **1.3.0**.
 
 - Archivo del pack: [`dist/aleja.mrpack`](dist/aleja.mrpack), en formato Modrinth.
 - **Para instalarlo en SKLauncher con Claude:** abre [INSTALAR-CON-CLAUDE.md](INSTALAR-CON-CLAUDE.md) y sigue las instrucciones.
@@ -47,6 +47,7 @@ Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric 0.20.
 | zoomify | 2.17.0+mc26.1.2 | cliente |
 | lambdynamiclights | 4.11.2+26.1.2 | cliente |
 | controlling | 26.1.2.7 | cliente |
+| inventory-profiles-next | fabric-26.1-2.3.8 | cliente |
 | jade | 26.1.9+fabric | cliente |
 | jei | 29.47.0.110 | ambos |
 | modmenu | 18.0.2 | cliente |

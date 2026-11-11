@@ -528,6 +528,21 @@
       }
     },
     {
+      "slug": "inventory-profiles-next",
+      "projectId": "O7RBXm3n",
+      "versionId": "lOBWkkzv",
+      "versionNumber": "fabric-26.1-2.3.8",
+      "filename": "InventoryProfilesNext-fabric-26.1.2-2.3.8.jar",
+      "url": "https://cdn.modrinth.com/data/O7RBXm3n/versions/lOBWkkzv/InventoryProfilesNext-fabric-26.1.2-2.3.8.jar",
+      "sha1": "6d9e5ac9627ecfc61ef1e0ad418697d068444cea",
+      "sha512": "fd78b8ee461db667aa83bc4aa1caf175ad6864f1fc2c0f8d2b7e3f31f769c6a3bfce847db3ca341c69936cd874ffb6f060a2664116e699441dbce88b53befc22",
+      "size": 1485761,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
       "slug": "jade",
       "projectId": "nvQzSEkH",
       "versionId": "fW2xykin",
@@ -917,6 +932,22 @@
         "server": "unsupported"
       },
       "dependencyOf": "controlling"
+    },
+    {
+      "slug": "libipn",
+      "projectId": "onSQdWhM",
+      "versionId": "94nbGWNs",
+      "versionNumber": "fabric-26.1-6.9.0",
+      "filename": "libIPN-fabric-26.1.2-6.9.0.jar",
+      "url": "https://cdn.modrinth.com/data/onSQdWhM/versions/94nbGWNs/libIPN-fabric-26.1.2-6.9.0.jar",
+      "sha1": "a08801c8ff8f7de6b05e5227688f5b8604b81e18",
+      "sha512": "d99d9aa2ea756ae299107519828ca01e3a7442a582ab8482a315dda528d0e268731889cf7fb3fce7a668bb8601e3b3ddc43b7d29981fd806372876a1bbd57b32",
+      "size": 641319,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "dependencyOf": "inventory-profiles-next"
     },
     {
       "slug": "mezzconfig",
