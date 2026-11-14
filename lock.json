@@ -980,6 +980,21 @@
         "server": "unsupported"
       },
       "dependencyOf": "modmenu"
+    },
+    {
+      "slug": "trinkets-updated",
+      "projectId": "XaT8sLP6",
+      "versionId": "XkGsalta",
+      "versionNumber": "4.0.1+26.1",
+      "filename": "trinkets-4.0.1+26.1.jar",
+      "url": "https://cdn.modrinth.com/data/XaT8sLP6/versions/XkGsalta/trinkets-4.0.1%2B26.1.jar",
+      "sha1": "2070dd270aeac5c8f99150bfe7085acdd0603a12",
+      "sha512": "1fec150053ef4e8a2f89614652930709d32a7fda8d1dc86268241522df9c7b15cd87beed374f6b34ade75d7ade82ae6a0dea4d02f5ccf873f8300c7e07558024",
+      "size": 663582,
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
     }
   ]
 }

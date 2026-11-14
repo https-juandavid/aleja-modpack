@@ -1,6 +1,6 @@
 {
   "name": "Aleja Aventura",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "minecraft": "26.1.2",
   "publicRepo": "https-juandavid/aleja-modpack",
   "mods": [
@@ -25,6 +25,7 @@
     { "slug": "the-graveyard-fabric" },
     { "slug": "lootr" },
     { "slug": "artifacts" },
+    { "slug": "trinkets-updated" },
     { "slug": "travelersbackpack" },
     { "slug": "waystones" },
     { "slug": "explorers-compass" },
