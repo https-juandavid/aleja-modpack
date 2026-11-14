@@ -10,7 +10,7 @@ Hola Claude. Quiero que instales en mi PC (Windows) los mods del modpack "Aleja 
 Datos del modpack:
 - Repositorio público: https://github.com/{{PUBLIC_REPO}}
 - Archivo del pack dentro del repo: dist/aleja.mrpack
-- Descarga directa (si no hay git): {{MRPACK_URL}}
+- Descarga directa (si no hay git): {{MRPACK_URL}} (descárgalo con la cabecera HTTP "Accept: application/vnd.github.raw"; NO uses raw.githubusercontent.com, que entrega versiones viejas por caché)
 
 Pasos:
 

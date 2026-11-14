@@ -10,7 +10,7 @@ Hola Claude. Quiero que instales en mi PC (Windows) los mods del modpack "Aleja 
 Datos del modpack:
 - Repositorio público: https://github.com/https-juandavid/aleja-modpack
 - Archivo del pack dentro del repo: dist/aleja.mrpack
-- Descarga directa (si no hay git): https://raw.githubusercontent.com/https-juandavid/aleja-modpack/main/dist/aleja.mrpack
+- Descarga directa (si no hay git): https://api.github.com/repos/https-juandavid/aleja-modpack/contents/dist/aleja.mrpack?ref=main (descárgalo con la cabecera HTTP "Accept: application/vnd.github.raw"; NO uses raw.githubusercontent.com, que entrega versiones viejas por caché)
 
 Pasos:
 
@@ -23,7 +23,7 @@ Pasos:
 
 3. Consigue el pack:
    - Si tengo git: clona https://github.com/https-juandavid/aleja-modpack.git en %USERPROFILE%\aleja-modpack, o si esa carpeta ya existe, haz "git pull" dentro de ella.
-   - Si no tengo git: descarga https://raw.githubusercontent.com/https-juandavid/aleja-modpack/main/dist/aleja.mrpack.
+   - Si no tengo git: descarga https://api.github.com/repos/https-juandavid/aleja-modpack/contents/dist/aleja.mrpack?ref=main.
    Descomprime dist/aleja.mrpack (es un zip) en una carpeta temporal NUEVA y lee el archivo modrinth.index.json.
 
 4. Descarga los mods a esa carpeta temporal (todavía no toques mi carpeta mods). Para cada entrada de "files" cuyo env.client NO sea "unsupported":

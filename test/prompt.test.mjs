@@ -6,18 +6,18 @@ const tpl = 'v={{VERSION}} repo={{PUBLIC_REPO}} url={{MRPACK_URL}} again={{VERSI
 
 test('renderPrompt replaces VERSION, PUBLIC_REPO and MRPACK_URL', () => {
   const out = renderPrompt(tpl, { version: '1.0.0', publicRepo: 'ana/aleja-modpack' });
-  assert.equal(out, 'v=1.0.0 repo=ana/aleja-modpack url=https://raw.githubusercontent.com/ana/aleja-modpack/main/dist/aleja.mrpack again=1.0.0');
+  assert.equal(out, 'v=1.0.0 repo=ana/aleja-modpack url=https://api.github.com/repos/ana/aleja-modpack/contents/dist/aleja.mrpack?ref=main again=1.0.0');
 });
 
 test('without publicRepo the prompt carries a visible pending notice instead of a URL', () => {
   const out = renderPrompt(tpl, { version: '1.0.0', publicRepo: null });
   assert.match(out, /PENDIENTE: publicar el repo/);
-  assert.doesNotMatch(out, /raw\.githubusercontent/);
+  assert.doesNotMatch(out, /api\.github\.com/);
   assert.doesNotMatch(out, /\{\{/);
 });
 
-test('mrpackUrl builds the raw GitHub url', () => {
-  assert.equal(mrpackUrl('o/r'), 'https://raw.githubusercontent.com/o/r/main/dist/aleja.mrpack');
+test('mrpackUrl uses the GitHub API (raw.githubusercontent caches stale packs for minutes)', () => {
+  assert.equal(mrpackUrl('o/r'), 'https://api.github.com/repos/o/r/contents/dist/aleja.mrpack?ref=main');
 });
 
 test('renderModList lists top-level mods with side labels, skipping dependencies', () => {

@@ -10,7 +10,7 @@ Requisito: tener ya creada en SKLauncher la instancia **Fabric 26.1.2** (por eje
 Hola Claude. Quiero que me crees en mi PC (Windows) un script para mantener actualizados los mods del modpack "Aleja Aventura" (Minecraft 26.1.2, Fabric) en mi SKLauncher. NO quiero que instales los mods tú a mano: quiero un script reutilizable que yo ejecute con doble clic cada vez que haya versión nueva. Pregúntame antes de crear o cambiar cualquier archivo.
 
 Datos fijos:
-- Pack (formato Modrinth .mrpack, es un zip con modrinth.index.json dentro): https://raw.githubusercontent.com/https-juandavid/aleja-modpack/main/dist/aleja.mrpack
+- Pack (formato Modrinth .mrpack, es un zip con modrinth.index.json dentro): https://api.github.com/repos/https-juandavid/aleja-modpack/contents/dist/aleja.mrpack?ref=main (descárgalo con la cabecera HTTP "Accept: application/vnd.github.raw"; NO uses raw.githubusercontent.com, que entrega versiones viejas por caché)
 - Repositorio público del pack: https://github.com/https-juandavid/aleja-modpack
 - Versión publicada en este momento: 1.4.0
 

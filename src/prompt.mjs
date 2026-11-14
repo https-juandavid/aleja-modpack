@@ -1,6 +1,8 @@
 const PENDING = 'PENDIENTE: publicar el repo del modpack en GitHub';
 
-export const mrpackUrl = (publicRepo) => `https://raw.githubusercontent.com/${publicRepo}/main/dist/aleja.mrpack`;
+// GitHub API, not raw.githubusercontent.com: the raw CDN kept serving an old pack for 5+ minutes after a release.
+// Requests must send the header "Accept: application/vnd.github.raw" to get the file bytes.
+export const mrpackUrl = (publicRepo) => `https://api.github.com/repos/${publicRepo}/contents/dist/aleja.mrpack?ref=main`;
 
 export function renderPrompt(template, { version, publicRepo }) {
   return template
