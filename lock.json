@@ -995,6 +995,21 @@
         "client": "required",
         "server": "required"
       }
+    },
+    {
+      "slug": "carry-on",
+      "projectId": "joEfVgkn",
+      "versionId": "ISFd6ie5",
+      "versionNumber": "2.10.0",
+      "filename": "carryon-fabric-26.1.2-2.10.0.jar",
+      "url": "https://cdn.modrinth.com/data/joEfVgkn/versions/ISFd6ie5/carryon-fabric-26.1.2-2.10.0.jar",
+      "sha1": "ae5a2b0f3f3898145cfec3f970938ab2457f9113",
+      "sha512": "a366f68b848123ec6149d77b33b6282e4ceae484d3555e379f55b8034e28c1c83cebec3e7dee84cd60bc37001497bbdbfbb449b77867bd3ed30b20a8d2c01e19",
+      "size": 376250,
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
     }
   ]
 }

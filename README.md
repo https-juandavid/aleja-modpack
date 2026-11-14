@@ -58,5 +58,6 @@ Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric 0.20.
 | moreculling | 1.7.4 | cliente |
 | dynamic-fps | 3.11.7 | cliente |
 | trinkets-updated | 4.0.1+26.1 | ambos |
+| carry-on | 2.10.0 | ambos |
 
 Este repo solo contiene la lista de mods con enlaces a Modrinth. No incluye ningún archivo de mod.
