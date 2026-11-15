@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
-import { resolveMods } from './modrinth.mjs';
+import { resolveMods, pinVersions } from './modrinth.mjs';
 import { buildIndex, writeMrpack } from './mrpack.mjs';
 import { renderPrompt, renderModList } from './prompt.mjs';
 
@@ -20,11 +20,18 @@ async function stableLoader(mc) {
 
 async function main() {
   const update = process.argv.includes('--update');
+  const keepVersions = process.argv.includes('--keep-versions');
   const modsJson = JSON.parse(await readFile(p('mods.json'), 'utf8'));
   let lockFile;
   if (update || !existsSync(p('lock.json'))) {
-    const mods = await resolveMods(modsJson);
-    lockFile = { minecraft: modsJson.minecraft, loader: await stableLoader(modsJson.minecraft), mods };
+    let mods = await resolveMods(modsJson);
+    let loader = await stableLoader(modsJson.minecraft);
+    if (keepVersions && existsSync(p('lock.json'))) {
+      const pinned = JSON.parse(await readFile(p('lock.json'), 'utf8'));
+      mods = pinVersions(mods, pinned.mods);
+      loader = pinned.loader;
+    }
+    lockFile = { minecraft: modsJson.minecraft, loader, mods };
     await writeFile(p('lock.json'), JSON.stringify(lockFile, null, 2) + '\n');
   } else {
     lockFile = JSON.parse(await readFile(p('lock.json'), 'utf8'));

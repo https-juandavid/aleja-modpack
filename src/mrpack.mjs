@@ -9,7 +9,7 @@ export function buildIndex(modsJson, lock, loaderVersion) {
     versionId: modsJson.version,
     name: modsJson.name,
     files: lock.map((e) => ({
-      path: `mods/${e.filename}`,
+      path: `${e.dir ?? 'mods'}/${e.filename}`,
       hashes: { sha1: e.sha1, sha512: e.sha512 },
       env: { client: e.env.client, server: e.env.server },
       downloads: [e.url],

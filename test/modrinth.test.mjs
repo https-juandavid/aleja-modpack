@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { resolveMods } from '../src/modrinth.mjs';
+import { resolveMods, pinVersions } from '../src/modrinth.mjs';
 
 // Fake Modrinth API. projects: { slug: { id, client_side, server_side, versions: [...] } }
 function fakeFetch(projects) {
@@ -13,7 +13,8 @@ function fakeFetch(projects) {
     const p = projects[slug];
     if (!p) return { ok: false, status: 404, json: async () => ({}) };
     if (parts[3] === 'version') {
-      assert.equal(u.searchParams.get('loaders'), '["fabric"]');
+      if (p.type === 'resourcepack') assert.equal(u.searchParams.get('loaders'), null);
+      else assert.equal(u.searchParams.get('loaders'), '["fabric"]');
       assert.equal(u.searchParams.get('game_versions'), '["26.1.2"]');
       return { ok: true, status: 200, json: async () => p.versions };
     }
@@ -142,4 +143,21 @@ test('env comes from project client_side/server_side, side override wins', async
   const lock = await resolveMods(base([{ slug: 's', side: 'server' }, { slug: 'n' }]), { fetch });
   assert.deepEqual(lock.find((e) => e.slug === 's').env, { client: 'unsupported', server: 'required' });
   assert.deepEqual(lock.find((e) => e.slug === 'n').env, { client: 'optional', server: 'required' });
+});
+
+test('resource packs are resolved without loader filter, go to resourcepacks/ and only on the client', async () => {
+  const fetch = fakeFetch({ 'fresh-animations': { id: 'FA', type: 'resourcepack', client_side: 'required', server_side: 'unsupported', versions: [ver('fa1', '1.0', 'release', '2026-01-01')] } });
+  const lock = await resolveMods(base([{ slug: 'fresh-animations', type: 'resourcepack' }]), { fetch });
+  assert.equal(lock[0].dir, 'resourcepacks');
+  assert.deepEqual(lock[0].env, { client: 'required', server: 'unsupported' });
+});
+
+test('pinVersions keeps pinned versions of existing mods, takes new mods fresh and drops removed ones', () => {
+  const e = (slug, v, extra = {}) => ({ slug, projectId: slug, versionId: v, versionNumber: v, filename: `${slug}-${v}.jar`, url: `u/${slug}-${v}`, sha1: v, sha512: v, size: 1, env: { client: 'required', server: 'required' }, ...extra });
+  const pinned = [e('lootr', '1'), e('betternether', '1'), e('bclib', '1', { dependencyOf: 'betternether' })];
+  const fresh = [e('lootr', '2', { env: { client: 'required', server: 'unsupported' } }), e('explorify', '5')];
+  const out = pinVersions(fresh, pinned);
+  assert.deepEqual(out.map((m) => [m.slug, m.versionNumber]), [['lootr', '1'], ['explorify', '5']]);
+  assert.equal(out[0].filename, 'lootr-1.jar');
+  assert.deepEqual(out[0].env, { client: 'required', server: 'unsupported' }); // env follows current mods.json rules
 });

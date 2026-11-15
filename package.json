@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node --test \"test/**/*.test.mjs\"",
     "build": "node src/build.mjs",
-    "update": "node src/build.mjs --update"
+    "update": "node src/build.mjs --update",
+    "sync": "node src/build.mjs --update --keep-versions"
   },
   "dependencies": {
     "fflate": "^0.8.3"

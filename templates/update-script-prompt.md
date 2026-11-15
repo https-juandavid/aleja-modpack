@@ -30,6 +30,7 @@ Qué debe hacer el script (PowerShell compatible con Windows PowerShell 5.1, sin
    - Un .jar de la carpeta mods cuyo hash coincide con un deseado: se queda (no se vuelve a descargar).
    - Un deseado que no está (o cuyo hash no coincide): hay que descargarlo.
    - Un .jar de mods que no corresponde a ningún deseado (versión vieja o mod que se quitó del pack): se mueve a una carpeta mods-respaldo-AAAAMMDD-HHMM dentro de la instancia. NUNCA se borra nada.
+   - Paquetes de recursos: las entradas cuyo "path" empieza por resourcepacks/ van a la carpeta resourcepacks de la instancia (no a mods). Ahí solo se descargan las que falten (comparando por hash). Si una versión vieja de un paquete que el script instaló antes ya no está en el pack, se mueve a resourcepacks-respaldo-AAAAMMDD-HHMM; para saber cuáles instaló el script, guarda la lista en resourcepacks\.aleja-gestionados.txt. Los paquetes que yo haya puesto a mano no se tocan nunca.
    - Mostrarme un resumen (se quedan N, se descargan N, se mueven a respaldo N, con nombres) antes de cambiar nada.
 
 4. Descargar SOLO los que faltan a la carpeta temporal:
@@ -58,3 +59,6 @@ Cuando lo tengas, muéstrame el script completo y explícame en pocas palabras q
 3. Revisa el resumen y abre SKLauncher.
 
 Si prefieres que Claude te lo haga todo directamente sin script, usa [INSTALAR-CON-CLAUDE.md](INSTALAR-CON-CLAUDE.md).
+4. Animaciones de los mobs: la primera vez, en *Opciones → Paquetes de recursos* activa **Fresh Animations** (pásalo a la columna de la derecha). El script lo mantiene actualizado.
+
+Si ya tenías el actualizador de antes, vuelve a pasarle este prompt a Claude una vez: desde el pack 1.5.0 también instala paquetes de recursos.

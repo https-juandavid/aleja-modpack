@@ -31,7 +31,7 @@ Pasos:
    - Calcula su SHA-512 y compáralo con hashes.sha512. Si alguno no coincide, detente y avísame: mi carpeta mods debe quedar como estaba.
    Las entradas con env.client "unsupported" son solo del servidor: no las instales.
 
-5. Solo cuando TODOS los archivos estén descargados y verificados: si ya existe la carpeta mods, renómbrala a mods-respaldo-AAAAMMDD-HHMM (con la fecha y hora actuales; no borres nada), crea una carpeta mods nueva, copia ahí los .jar verificados y crea el archivo mods\.aleja-version con el texto {{VERSION}}.
+5. Solo cuando TODOS los archivos estén descargados y verificados: si ya existe la carpeta mods, renómbrala a mods-respaldo-AAAAMMDD-HHMM (con la fecha y hora actuales; no borres nada), crea una carpeta mods nueva, copia ahí los .jar verificados y crea el archivo mods\.aleja-version con el texto {{VERSION}}. Las entradas cuyo "path" empieza por resourcepacks/ son paquetes de recursos: cópialas a la carpeta resourcepacks de la instancia (créala si no existe) sin tocar los paquetes que ya tenga.
 
 6. Dime qué instalaste (lista de archivos), la versión del pack que quedó ({{VERSION}}) y si hubo algún problema.
 
@@ -48,3 +48,4 @@ Reglas: no ejecutes ningún archivo descargado (.jar, .exe, scripts); solo desc�
    - La primera vez: `/register <contraseña-global> <tu-clave> <tu-clave>`
    - Las siguientes: `/login <tu-clave>`
 4. Zoom: mantén presionada la tecla **C**.
+5. Animaciones de los mobs: en *Opciones → Paquetes de recursos* activa **Fresh Animations** (pásalo a la columna de la derecha).

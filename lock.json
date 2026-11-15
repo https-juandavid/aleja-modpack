@@ -228,21 +228,6 @@
       }
     },
     {
-      "slug": "betternether",
-      "projectId": "MpzVLzy5",
-      "versionId": "7CEc5wqL",
-      "versionNumber": "26.101.5",
-      "filename": "better-nether-26.101.5.jar",
-      "url": "https://cdn.modrinth.com/data/MpzVLzy5/versions/7CEc5wqL/better-nether-26.101.5.jar",
-      "sha1": "b730f2bf25d45b7d1e544766d05f6d539b517e73",
-      "sha512": "56bba71cef6450967efd96c5809ac61c5332fabf5aae180020538f5f599ac91a177ac10517c519e46b7acd35953384c105f2636e7d5454264369173698b55000",
-      "size": 24418052,
-      "env": {
-        "client": "required",
-        "server": "required"
-      }
-    },
-    {
       "slug": "friends-and-foes",
       "projectId": "POQ2i9zu",
       "versionId": "MReCzJrI",
@@ -297,6 +282,36 @@
       "sha1": "34787731f68022c862035033c3389e88e4cd25d8",
       "sha512": "6c37eb01d01ab472c079b060922310933a99b4f5d7a2e20970f7d0ecc13cef0650920c857c185356e0a942c56dc6ec2305afd5e6cc534153550ea470a57195a2",
       "size": 1685062,
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "trinkets-updated",
+      "projectId": "XaT8sLP6",
+      "versionId": "XkGsalta",
+      "versionNumber": "4.0.1+26.1",
+      "filename": "trinkets-4.0.1+26.1.jar",
+      "url": "https://cdn.modrinth.com/data/XaT8sLP6/versions/XkGsalta/trinkets-4.0.1%2B26.1.jar",
+      "sha1": "2070dd270aeac5c8f99150bfe7085acdd0603a12",
+      "sha512": "1fec150053ef4e8a2f89614652930709d32a7fda8d1dc86268241522df9c7b15cd87beed374f6b34ade75d7ade82ae6a0dea4d02f5ccf873f8300c7e07558024",
+      "size": 663582,
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "carry-on",
+      "projectId": "joEfVgkn",
+      "versionId": "ISFd6ie5",
+      "versionNumber": "2.10.0",
+      "filename": "carryon-fabric-26.1.2-2.10.0.jar",
+      "url": "https://cdn.modrinth.com/data/joEfVgkn/versions/ISFd6ie5/carryon-fabric-26.1.2-2.10.0.jar",
+      "sha1": "ae5a2b0f3f3898145cfec3f970938ab2457f9113",
+      "sha512": "a366f68b848123ec6149d77b33b6282e4ceae484d3555e379f55b8034e28c1c83cebec3e7dee84cd60bc37001497bbdbfbb449b77867bd3ed30b20a8d2c01e19",
+      "size": 376250,
       "env": {
         "client": "required",
         "server": "required"
@@ -678,6 +693,217 @@
       }
     },
     {
+      "slug": "yungs-better-nether-fortresses",
+      "projectId": "Z2mXHnxP",
+      "versionId": "itXNeE2A",
+      "versionNumber": "26.1.2-Fabric-4.1.1",
+      "filename": "YungsBetterNetherFortresses-26.1.2-Fabric-4.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/Z2mXHnxP/versions/itXNeE2A/YungsBetterNetherFortresses-26.1.2-Fabric-4.1.1.jar",
+      "sha1": "0e71f1e1fe51b52c6b8a45a4669294f2d591f004",
+      "sha512": "0c77cfde867b5809bf70165a7c0e55d7d3d8de307b04395c9b02635f838cedae35b6f4a1362b1fb99bce501fed71754250dc6407dd0717893262aec1c8df5cdb",
+      "size": 732774,
+      "env": {
+        "client": "unsupported",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "mns-moogs-nether-structures",
+      "projectId": "nGUXvjTa",
+      "versionId": "OLTqXnsN",
+      "versionNumber": "3.1.1",
+      "filename": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/nGUXvjTa/versions/OLTqXnsN/MoogsNetherStructures-universal-1.21-3.1.1.jar",
+      "sha1": "78845cb7bccaa7812bacce4efdd5481b81b8c347",
+      "sha512": "95f8f8fcff3851bf1b92e2ab8465e551506fe819d5269ef7e251d446563546a318ee7fcb7b8a671209895e4fd5df084101f203da43b65d1af4833e9d7bae6c00",
+      "size": 3916038,
+      "env": {
+        "client": "unsupported",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "cinderscapes",
+      "projectId": "QC4wcUXZ",
+      "versionId": "i0t6Ig39",
+      "versionNumber": "6.0.0",
+      "filename": "cinderscapes-6.0.0.jar",
+      "url": "https://cdn.modrinth.com/data/QC4wcUXZ/versions/i0t6Ig39/cinderscapes-6.0.0.jar",
+      "sha1": "a5e79f6ddfebe2c0a6b42971fc9a44a5eb7fb350",
+      "sha512": "77c06c2802ec60e4b261d5ae8ea08fc57b9ef9ba4bdd3c9f27234321e5c5ab84b7831f58b2bf72713cc0ad13cce930283dc8ee9690f36eb9299ca3a0a07d02c9",
+      "size": 15183717,
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "moogs-voyager-structures",
+      "projectId": "OQAgZMH1",
+      "versionId": "PiFoSPXI",
+      "versionNumber": "5.1.3",
+      "filename": "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+      "url": "https://cdn.modrinth.com/data/OQAgZMH1/versions/PiFoSPXI/MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+      "sha1": "6759fa57891f731e54f865c13ffa0601a829b76a",
+      "sha512": "80e9e4a6543e8fc7d24d7e1fb4d4245d1d30f9aaf02ae2ba1098956106bea411a4502ce1d4b8fa97b935c9421a0eebf42226a46c8172cbbf621cc8ca16a50457",
+      "size": 2234287,
+      "env": {
+        "client": "unsupported",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "explorify",
+      "projectId": "HSfsxuTo",
+      "versionId": "oyrAnNG8",
+      "versionNumber": "v1.6.6",
+      "filename": "Explorify v1.6.6.mod.jar",
+      "url": "https://cdn.modrinth.com/data/HSfsxuTo/versions/oyrAnNG8/Explorify%20v1.6.6.mod.jar",
+      "sha1": "d7b21626ad33d898536634764cec6c9a8cd55063",
+      "sha512": "d4368c83b493c6fcf9b489cd91b4d1e468d695d099d9df3845a6fcee07ef58dc35074557d0108627b98c9941b1e6a6c0bcdbbcd121e8915514a21b91e9d38530",
+      "size": 775401,
+      "env": {
+        "client": "optional",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "structory",
+      "projectId": "aKCwCJlY",
+      "versionId": "TUbwu7eG",
+      "versionNumber": "1.3.17",
+      "filename": "Structory_26.2_v1.3.7.jar",
+      "url": "https://cdn.modrinth.com/data/aKCwCJlY/versions/TUbwu7eG/Structory_26.2_v1.3.7.jar",
+      "sha1": "8a9a1a1b3f74398310420b6fbe2c26ef142bed42",
+      "sha512": "4178a15f32f6ed3d59a7eb2222a8e3f539efd7b54d8ffb790cbf1dfe5c54c6ce6ec33220e148424109c6360c4c6f081b9fbebfe74745fe3c8f05619a06ccb9ec",
+      "size": 1261346,
+      "env": {
+        "client": "optional",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "structory-towers",
+      "projectId": "j3FONRYr",
+      "versionId": "ziO4YIv1",
+      "versionNumber": "1.0.17",
+      "filename": "Structory_Towers_26.2_v1.0.17.jar",
+      "url": "https://cdn.modrinth.com/data/j3FONRYr/versions/ziO4YIv1/Structory_Towers_26.2_v1.0.17.jar",
+      "sha1": "fa40253068726262f9db9fa048c41b96750fd4b7",
+      "sha512": "74b1f29439e2946ef9b3f9d8d7915bc112239d5009587c7817c4f45bee7e7a48906ffcddab67f0078fe82e996093657ab874a5a0498ccc045dda4bd562bc7702",
+      "size": 491515,
+      "env": {
+        "client": "optional",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "yungs-extras",
+      "projectId": "ZYgyPyfq",
+      "versionId": "LxlVkvKv",
+      "versionNumber": "26.1.2-Fabric-6.1.0",
+      "filename": "YungsExtras-26.1.2-Fabric-6.1.0.jar",
+      "url": "https://cdn.modrinth.com/data/ZYgyPyfq/versions/LxlVkvKv/YungsExtras-26.1.2-Fabric-6.1.0.jar",
+      "sha1": "8cb5e5f083fe65747e70cb7b0d8369305ba63047",
+      "sha512": "39f0668ae6639165485e7aa107c6fee570c9f574f8497b44def3efff40360464942f54bd931ecee82d080434dfae65fa4b106c1d33a391d6aff0369916f8bb14",
+      "size": 333130,
+      "env": {
+        "client": "unsupported",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "yungs-bridges",
+      "projectId": "Ht4BfYp6",
+      "versionId": "Emt3LgQS",
+      "versionNumber": "26.1.2-Fabric-6.1.0",
+      "filename": "YungsBridges-26.1.2-Fabric-6.1.0.jar",
+      "url": "https://cdn.modrinth.com/data/Ht4BfYp6/versions/Emt3LgQS/YungsBridges-26.1.2-Fabric-6.1.0.jar",
+      "sha1": "2f539192db79f1d13a4370f2fc766f0e5f3a3b8c",
+      "sha512": "1100b01c4135b92d79255639c0a82e80dafa26209b6c2473cdf6f3f0df0f09498f8a5a4b29fb6986c6f69e6f6cc8cfd392101376c69fe07252d7d1f017b117ca",
+      "size": 264632,
+      "env": {
+        "client": "unsupported",
+        "server": "required"
+      }
+    },
+    {
+      "slug": "not-enough-animations",
+      "projectId": "MPCX6s5C",
+      "versionId": "1q6LdvOS",
+      "versionNumber": "1.12.7",
+      "filename": "notenoughanimations-fabric-1.12.7-mc26.1.jar",
+      "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/1q6LdvOS/notenoughanimations-fabric-1.12.7-mc26.1.jar",
+      "sha1": "2e162287f744def4bef1804e8651b4c7ec8d6e53",
+      "sha512": "2da8d00c140983d98da03727e82050e630103a77ad5791b001106b50f7f271c4ad9d31d8bc9fa629afdb2a4e0c2b3e66097edaaebda5ec4ad30dedcff721cb44",
+      "size": 1865387,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "slug": "3dskinlayers",
+      "projectId": "zV5r3pPn",
+      "versionId": "hIowUmVK",
+      "versionNumber": "1.11.4",
+      "filename": "skinlayers3d-fabric-1.11.4-mc26.1.jar",
+      "url": "https://cdn.modrinth.com/data/zV5r3pPn/versions/hIowUmVK/skinlayers3d-fabric-1.11.4-mc26.1.jar",
+      "sha1": "a7b2da0fd32976bfe2fce4384acda6b77e00436d",
+      "sha512": "d223c64d27e595537454d92b059931770bebbd18ca644c727da6865e7dbcd5eb4b949dccde399a33e0c0dffe2fea2718b7f2bafaf70df501b3d6065d2b225018",
+      "size": 1890713,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "slug": "entity-model-features",
+      "projectId": "4I1XuqiY",
+      "versionId": "zh2AVI88",
+      "versionNumber": "3.3.12-fabric-26.1",
+      "filename": "entity_model_features-3.3.12-26.1-fabric.jar",
+      "url": "https://cdn.modrinth.com/data/4I1XuqiY/versions/zh2AVI88/entity_model_features-3.3.12-26.1-fabric.jar",
+      "sha1": "80814d6182eb5ea23a7ff724b62e3aaf4847d23a",
+      "sha512": "e65d4bda4f655b64e70f8c0cb9491e90181c0e3c511317ba53431db5e36dd405307fa69eb79e53c4b17d9a2d378a99c247fe8730acb90b39ecbfaa0681dd27ea",
+      "size": 665366,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "slug": "entitytexturefeatures",
+      "projectId": "BVzZfTc1",
+      "versionId": "JxWjtiQZ",
+      "versionNumber": "7.2.7-fabric-26.1",
+      "filename": "entity_texture_features-7.2.7-26.1-fabric.jar",
+      "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/JxWjtiQZ/entity_texture_features-7.2.7-26.1-fabric.jar",
+      "sha1": "eb2e853369fd19630ec34bdaf14e6c765f0a2591",
+      "sha512": "d9bd6226c17d342104389edb5f8d8037ebaf6b8572fd63acae58906cae792d8f15f23e242bb032337b6b10d53ec121d4fec35746e63392795de12dfa40f677ae",
+      "size": 805489,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "slug": "fresh-animations",
+      "projectId": "50dA9Sha",
+      "versionId": "xfE3qfr5",
+      "versionNumber": "1.11.2",
+      "filename": "FreshAnimations_v1.11.2_26.1+.zip",
+      "url": "https://cdn.modrinth.com/data/50dA9Sha/versions/xfE3qfr5/FreshAnimations_v1.11.2_26.1%2B.zip",
+      "sha1": "8176a3c13963aac2adc1f12214ceabfc45127ab2",
+      "sha512": "c0a529479b9e43465d8b5c5f939711fded92d92fd26053b75fcbe0560046e23655f2d429d108b286cbfceb0470960b5a519ac2311ab108899b7529b76a9e9e30",
+      "size": 778725,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "dir": "resourcepacks"
+    },
+    {
       "slug": "cloth-config",
       "projectId": "9s6osm5g",
       "versionId": "GFM8zh9J",
@@ -740,38 +966,6 @@
         "server": "required"
       },
       "dependencyOf": "terralith"
-    },
-    {
-      "slug": "worldweaver",
-      "projectId": "RiN8rDVs",
-      "versionId": "WKBeK6NA",
-      "versionNumber": "26.101.5",
-      "filename": "worldweaver-26.101.5.jar",
-      "url": "https://cdn.modrinth.com/data/RiN8rDVs/versions/WKBeK6NA/worldweaver-26.101.5.jar",
-      "sha1": "73f8744d31c3da02aac261001b7c42a29c160703",
-      "sha512": "f8e7ce61ac5e96ee30a3455bab6ea3a88467356c5642fbf95c9609dffbcecd9e406dad0fe51e4f83975bd267049f9bf3bb0192de8c1e1c4015dbf0e118721db4",
-      "size": 2983387,
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "dependencyOf": "betternether"
-    },
-    {
-      "slug": "bclib",
-      "projectId": "BgNRHReB",
-      "versionId": "L2Um1lwa",
-      "versionNumber": "26.101.5",
-      "filename": "bclib-26.101.5.jar",
-      "url": "https://cdn.modrinth.com/data/BgNRHReB/versions/L2Um1lwa/bclib-26.101.5.jar",
-      "sha1": "1183ed6403a699736013c9bd08872952aa2dd91d",
-      "sha512": "10398d0b1032a80e32b55cf89e0912f7fb371d1a54f85b01696ea9ae503554ec96ea96a46108bf4e9fce93d4f903d907c5670b16b266619d4d475432d614e557",
-      "size": 1330855,
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "dependencyOf": "betternether"
     },
     {
       "slug": "resourceful-lib",
@@ -982,34 +1176,20 @@
       "dependencyOf": "modmenu"
     },
     {
-      "slug": "trinkets-updated",
-      "projectId": "XaT8sLP6",
-      "versionId": "XkGsalta",
-      "versionNumber": "4.0.1+26.1",
-      "filename": "trinkets-4.0.1+26.1.jar",
-      "url": "https://cdn.modrinth.com/data/XaT8sLP6/versions/XkGsalta/trinkets-4.0.1%2B26.1.jar",
-      "sha1": "2070dd270aeac5c8f99150bfe7085acdd0603a12",
-      "sha512": "1fec150053ef4e8a2f89614652930709d32a7fda8d1dc86268241522df9c7b15cd87beed374f6b34ade75d7ade82ae6a0dea4d02f5ccf873f8300c7e07558024",
-      "size": 663582,
+      "slug": "moogs-structure-lib",
+      "projectId": "1oUDhxuy",
+      "versionId": "SbVBqJiu",
+      "versionNumber": "3.4.2-fabric-26.1.2",
+      "filename": "MoogsStructureLib-fabric-26.1.2-3.4.2.jar",
+      "url": "https://cdn.modrinth.com/data/1oUDhxuy/versions/SbVBqJiu/MoogsStructureLib-fabric-26.1.2-3.4.2.jar",
+      "sha1": "8a98d01897bf387cc71d96e3c9478d1ba8c1630b",
+      "sha512": "42ac65a845989c3addc93282811dc170970d2a1c742f53af84e4a6c64f8bf293d7682661caaae7ae71472da0a3ad1a17d50717a5b948bb5fc4740b21be71a217",
+      "size": 1095740,
       "env": {
-        "client": "required",
+        "client": "unsupported",
         "server": "required"
-      }
-    },
-    {
-      "slug": "carry-on",
-      "projectId": "joEfVgkn",
-      "versionId": "ISFd6ie5",
-      "versionNumber": "2.10.0",
-      "filename": "carryon-fabric-26.1.2-2.10.0.jar",
-      "url": "https://cdn.modrinth.com/data/joEfVgkn/versions/ISFd6ie5/carryon-fabric-26.1.2-2.10.0.jar",
-      "sha1": "ae5a2b0f3f3898145cfec3f970938ab2457f9113",
-      "sha512": "a366f68b848123ec6149d77b33b6282e4ceae484d3555e379f55b8034e28c1c83cebec3e7dee84cd60bc37001497bbdbfbb449b77867bd3ed30b20a8d2c01e19",
-      "size": 376250,
-      "env": {
-        "client": "required",
-        "server": "required"
-      }
+      },
+      "dependencyOf": "mns-moogs-nether-structures"
     }
   ]
 }

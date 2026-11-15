@@ -40,3 +40,8 @@ test('writeMrpack produces zip containing modrinth.index.json', async () => {
   const files = unzipSync(new Uint8Array(readFileSync(out)));
   assert.deepEqual(JSON.parse(strFromU8(files['modrinth.index.json'])), idx);
 });
+
+test('resource pack entries are placed under resourcepacks/', () => {
+  const idx = buildIndex(modsJson, [{ ...lock[0], filename: 'FreshAnimations.zip', dir: 'resourcepacks' }], '0.20.1');
+  assert.equal(idx.files[0].path, 'resourcepacks/FreshAnimations.zip');
+});

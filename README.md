@@ -1,6 +1,6 @@
 # Aleja Aventura — modpack
 
-Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric 0.20.1**. Versión del pack: **1.4.0**.
+Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric 0.20.1**. Versión del pack: **1.5.0**.
 
 - Archivo del pack: [`dist/aleja.mrpack`](dist/aleja.mrpack), en formato Modrinth.
 - **Para instalarlo en SKLauncher con Claude:** abre [INSTALAR-CON-CLAUDE.md](INSTALAR-CON-CLAUDE.md) y sigue las instrucciones.
@@ -27,11 +27,12 @@ Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric 0.20.
 | towns-and-towers | 1.13.11 | ambos |
 | terralith | 2.6.2 | ambos |
 | nullscape | 1.2.20 | ambos |
-| betternether | 26.101.5 | ambos |
 | friends-and-foes | fabric-5.0.4+mc26.1.2 | ambos |
 | the-graveyard-fabric | 4.0.0+mc26.1.2-fabric | ambos |
 | lootr | 1.23.38.123 | ambos |
 | artifacts | 15.1.3 | ambos |
+| trinkets-updated | 4.0.1+26.1 | ambos |
+| carry-on | 2.10.0 | ambos |
 | travelersbackpack | 26.1.2-11.2.12 | ambos |
 | waystones | 26.1.2.17+fabric-26.1.2 | ambos |
 | explorers-compass | 26.1-2.5.1-fabric | ambos |
@@ -57,7 +58,19 @@ Modpack de exploración y mazmorras para **Minecraft 26.1.2** con **Fabric 0.20.
 | immediatelyfast | 1.15.3+26.1-fabric | cliente |
 | moreculling | 1.7.4 | cliente |
 | dynamic-fps | 3.11.7 | cliente |
-| trinkets-updated | 4.0.1+26.1 | ambos |
-| carry-on | 2.10.0 | ambos |
+| yungs-better-nether-fortresses | 26.1.2-Fabric-4.1.1 | servidor |
+| mns-moogs-nether-structures | 3.1.1 | servidor |
+| cinderscapes | 6.0.0 | ambos |
+| moogs-voyager-structures | 5.1.3 | servidor |
+| explorify | v1.6.6 | ambos |
+| structory | 1.3.17 | ambos |
+| structory-towers | 1.0.17 | ambos |
+| yungs-extras | 26.1.2-Fabric-6.1.0 | servidor |
+| yungs-bridges | 26.1.2-Fabric-6.1.0 | servidor |
+| not-enough-animations | 1.12.7 | cliente |
+| 3dskinlayers | 1.11.4 | cliente |
+| entity-model-features | 3.3.12-fabric-26.1 | cliente |
+| entitytexturefeatures | 7.2.7-fabric-26.1 | cliente |
+| fresh-animations | 1.11.2 | cliente |
 
 Este repo solo contiene la lista de mods con enlaces a Modrinth. No incluye ningún archivo de mod.

@@ -40,7 +40,8 @@ function pickVersion(slug, versions, allowUnstable, isDependency) {
 
 export async function resolveMods(modsJson, { fetch = globalThis.fetch } = {}) {
   const mc = modsJson.minecraft;
-  const query = `loaders=${encodeURIComponent('["fabric"]')}&game_versions=${encodeURIComponent(`["${mc}"]`)}`;
+  const gv = `game_versions=${encodeURIComponent(`["${mc}"]`)}`;
+  const query = `loaders=${encodeURIComponent('["fabric"]')}&${gv}`;
   const byProject = new Map(); // projectId -> entry
   const queue = modsJson.mods.map((m) => ({ ...m, ref: m.slug }));
 
@@ -49,7 +50,8 @@ export async function resolveMods(modsJson, { fetch = globalThis.fetch } = {}) {
     const project = await getJson(fetch, `${API}/project/${encodeURIComponent(item.ref)}`, `el proyecto ${item.ref}`);
     // Multi-loader files list dependencies for every loader; skip the non-Fabric ones.
     if (item.dependencyOf && Array.isArray(project.loaders) && !project.loaders.includes('fabric')) continue;
-    let env = envFor(project, item.side);
+    const isPack = item.type === 'resourcepack';
+    let env = isPack ? { client: 'required', server: 'unsupported' } : envFor(project, item.side);
     if (item.parentEnv) env = restrict(env, item.parentEnv);
 
     const existing = byProject.get(project.id);
@@ -59,7 +61,8 @@ export async function resolveMods(modsJson, { fetch = globalThis.fetch } = {}) {
       continue;
     }
 
-    const versions = await getJson(fetch, `${API}/project/${encodeURIComponent(item.ref)}/version?${query}`, `las versiones de ${project.slug}`);
+    // Resource packs have no Fabric loader tag, only the game version.
+    const versions = await getJson(fetch, `${API}/project/${encodeURIComponent(item.ref)}/version?${isPack ? gv : query}`, `las versiones de ${project.slug}`);
     let v;
     try {
       v = pickVersion(project.slug, versions, item.allowUnstable, Boolean(item.dependencyOf));
@@ -73,6 +76,7 @@ export async function resolveMods(modsJson, { fetch = globalThis.fetch } = {}) {
       filename: file.filename, url: file.url, sha1: file.hashes.sha1, sha512: file.hashes.sha512, size: file.size, env,
     };
     if (item.dependencyOf) entry.dependencyOf = item.dependencyOf;
+    if (isPack) entry.dir = 'resourcepacks';
     byProject.set(project.id, entry);
 
     for (const d of v.dependencies ?? []) {
@@ -81,4 +85,20 @@ export async function resolveMods(modsJson, { fetch = globalThis.fetch } = {}) {
     }
   }
   return [...byProject.values()];
+}
+
+const VERSION_FIELDS = ['versionId', 'versionNumber', 'filename', 'url', 'sha1', 'sha512', 'size'];
+
+// Keeps the versions already in the lock for mods that are still in the pack, so adding or removing
+// one mod never silently updates the others. New mods come in fresh; removed ones (and their deps) drop out.
+// Sides (env), dependencyOf and dir always follow the fresh resolution.
+export function pinVersions(fresh, pinned) {
+  const old = new Map(pinned.map((m) => [m.slug, m]));
+  return fresh.map((m) => {
+    const p = old.get(m.slug);
+    if (!p) return m;
+    const out = { ...m };
+    for (const k of VERSION_FIELDS) out[k] = p[k];
+    return out;
+  });
 }
