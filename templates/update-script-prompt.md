@@ -58,7 +58,8 @@ Cuando lo tengas, muéstrame el script completo y explícame en pocas palabras q
 2. Cierra SKLauncher y da doble clic a **"Actualizar mods Aleja"** en el escritorio.
 3. Revisa el resumen y abre SKLauncher.
 
-Si prefieres que Claude te lo haga todo directamente sin script, usa [INSTALAR-CON-CLAUDE.md](INSTALAR-CON-CLAUDE.md).
 4. Animaciones de los mobs: la primera vez, en *Opciones → Paquetes de recursos* activa **Fresh Animations** (pásalo a la columna de la derecha). El script lo mantiene actualizado.
+
+Si prefieres que Claude te lo haga todo directamente sin script, usa [INSTALAR-CON-CLAUDE.md](INSTALAR-CON-CLAUDE.md).
 
 Si ya tenías el actualizador de antes, vuelve a pasarle este prompt a Claude una vez: desde el pack 1.5.0 también instala paquetes de recursos.
