@@ -1,6 +1,6 @@
 {
   "name": "Aleja Aventura",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "minecraft": "26.1.2",
   "publicRepo": "https-juandavid/aleja-modpack",
   "mods": [
@@ -194,26 +194,6 @@
     },
     {
       "slug": "yungs-bridges"
-    },
-    {
-      "slug": "not-enough-animations",
-      "side": "client"
-    },
-    {
-      "slug": "3dskinlayers",
-      "side": "client"
-    },
-    {
-      "slug": "entity-model-features",
-      "side": "client"
-    },
-    {
-      "slug": "entitytexturefeatures",
-      "side": "client"
-    },
-    {
-      "slug": "fresh-animations",
-      "type": "resourcepack"
     }
   ]
 }

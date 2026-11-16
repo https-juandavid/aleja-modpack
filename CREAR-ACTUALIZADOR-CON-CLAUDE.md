@@ -12,7 +12,7 @@ Hola Claude. Quiero que me crees en mi PC (Windows) un script para mantener actu
 Datos fijos:
 - Pack (formato Modrinth .mrpack, es un zip con modrinth.index.json dentro): https://api.github.com/repos/https-juandavid/aleja-modpack/contents/dist/aleja.mrpack?ref=main (descárgalo con la cabecera HTTP "Accept: application/vnd.github.raw"; NO uses raw.githubusercontent.com, que entrega versiones viejas por caché)
 - Repositorio público del pack: https://github.com/https-juandavid/aleja-modpack
-- Versión publicada en este momento: 1.5.0
+- Versión publicada en este momento: 1.5.1
 
 Qué debe hacer el script (PowerShell compatible con Windows PowerShell 5.1, sin módulos externos):
 
